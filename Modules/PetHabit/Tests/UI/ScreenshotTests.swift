@@ -23,8 +23,8 @@ final class ScreenshotTests: XCTestCase {
         attachment.lifetime = .keepAlways
         add(attachment)
 
-        // Also save to tmp
-        let fullPath = "/tmp/Screen1_Home.png"
+        let fullPath = "/tmp/PetHabitScreenshots/\(name).png"
+        try? FileManager.default.createDirectory(atPath: "/tmp/PetHabitScreenshots", withIntermediateDirectories: true)
         try? screenshot.fullResolutionImage.pngData()?.write(to: URL(fileURLWithPath: fullPath))
     }
 
