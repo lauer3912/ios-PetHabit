@@ -31,8 +31,8 @@ targets:
     sources:
       - path: Modules/PetHabit/Sources
         type: group
+    resources:
       - path: Modules/PetHabit/Assets.xcassets
-        type: group
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.ggsheng.PetHabit
