@@ -25,7 +25,9 @@ final class ScreenshotTests: XCTestCase {
 
         let fullPath = "/tmp/PetHabitScreenshots/\(name).png"
         try? FileManager.default.createDirectory(atPath: "/tmp/PetHabitScreenshots", withIntermediateDirectories: true)
-        try? screenshot.fullResolutionImage.pngData()?.write(to: URL(fileURLWithPath: fullPath))
+        if let data = screenshot.pngRepresentation {
+            try? data.write(to: URL(fileURLWithPath: fullPath))
+        }
     }
 
     func testScreenshot_Home() throws {
