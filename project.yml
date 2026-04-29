@@ -44,11 +44,6 @@ targets:
         SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: "YES"
         LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks"
         ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: "YES"
-    dependencies:
-      - target: PetHabitTests
-        embed: false
-      - target: PetHabitUITests
-        embed: false
 
   PetHabitTests:
     type: bundle.unit-test
@@ -56,6 +51,9 @@ targets:
     sources:
       - path: Modules/PetHabit/Tests/Unit
         type: group
+    dependencies:
+      - target: PetHabit
+        embed: false
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.ggsheng.PetHabitTests
@@ -71,6 +69,9 @@ targets:
     sources:
       - path: Modules/PetHabit/Tests/UI
         type: group
+    dependencies:
+      - target: PetHabit
+        embed: false
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.ggsheng.PetHabitUITests
