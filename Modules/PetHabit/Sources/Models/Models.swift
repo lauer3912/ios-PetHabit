@@ -142,7 +142,7 @@ struct Achievement: Identifiable {
     let icon: String
     let xpReward: Int
     var isUnlocked: Bool
-    let unlockedDate: Date?
+    var unlockedDate: Date?
 }
 
 // MARK: - CLLocationCoordinate2D Extension
