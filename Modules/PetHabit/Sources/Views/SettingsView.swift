@@ -5,7 +5,7 @@ struct SettingsView: View {
     @EnvironmentObject var themeService: ThemeService
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ScrollView {
                 VStack(spacing: 20) {
                     // Profile Section

@@ -4,7 +4,7 @@ struct SocialView: View {
     @EnvironmentObject var petStore: PetStore
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ScrollView {
                 VStack(spacing: 20) {
                     // Pet Profile Page Card

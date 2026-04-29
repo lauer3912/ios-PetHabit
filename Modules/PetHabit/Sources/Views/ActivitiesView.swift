@@ -5,7 +5,7 @@ struct ActivitiesView: View {
     @State private var selectedActivityType: PetActivity.ActivityType = .walk
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack(spacing: 0) {
                 // Activity Type Picker
                 ScrollView(.horizontal, showsIndicators: false) {

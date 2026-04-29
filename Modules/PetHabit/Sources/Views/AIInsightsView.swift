@@ -4,7 +4,7 @@ struct AIInsightsView: View {
     @EnvironmentObject var petStore: PetStore
 
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ScrollView {
                 VStack(spacing: 20) {
                     // Health Score Overview
