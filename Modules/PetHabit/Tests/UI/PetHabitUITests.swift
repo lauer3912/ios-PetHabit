@@ -72,7 +72,7 @@ final class PetHabitUITests: XCTestCase {
     func testSettingsTabShowsOptions() {
         app.tabBars.buttons["Settings"].tap()
 
-        XCTAssertTrue(app.toggleSwitches["dark_mode_toggle"].waitForExistence(timeout: 3))
+        XCTAssertTrue(app.switches["dark_mode_toggle"].waitForExistence(timeout: 3))
     }
 
     // MARK: - Screenshot Tests
