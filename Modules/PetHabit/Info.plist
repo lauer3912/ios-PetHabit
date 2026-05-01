@@ -26,14 +26,18 @@
     <dict>
         <key>UIApplicationSupportsMultipleScenes</key>
         <false/>
-    </dict>
+        <key>NSUserNotificationsUsageDescription</key>
+    <string>PetHabit uses notifications to send you reminders and updates.</string>
+</dict>
     <key>UILaunchScreen</key>
     <dict>
         <key>UIColorName</key>
         <string>AccentColor</string>
         <key>UIImageName</key>
         <string></string>
-    </dict>
+        <key>NSUserNotificationsUsageDescription</key>
+    <string>PetHabit uses notifications to send you reminders and updates.</string>
+</dict>
     <key>UIRequiredDeviceCapabilities</key>
     <array>
         <string>armv7</string>
@@ -61,5 +65,7 @@
     <string>PetHabit needs access to your photo library to set pet profile photos.</string>
     <key>NSCameraUsageDescription</key>
     <string>PetHabit needs camera access to take pet photos for profile pictures.</string>
+    <key>NSUserNotificationsUsageDescription</key>
+    <string>PetHabit uses notifications to send you reminders and updates.</string>
 </dict>
 </plist>
